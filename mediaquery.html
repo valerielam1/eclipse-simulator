@@ -1,0 +1,82 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="reset.css">
+  <title>Document</title>
+  <style>
+  * {
+    transition: all 1s;
+  }
+  body {
+    background-color: #E5F2FB;
+  }
+
+  div.circle {
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    border-radius: 50vw;
+  }
+  div.circle-1 {
+    background-color: #ffae42;
+    top: 25vh;
+    left: 25vw;
+  }
+  div.circle-2 {
+    background-color: grey;
+    top: 25vh;
+    left: 10vw;
+  }
+  @media (min-width: 300px) {
+    div.circle-1 {
+      background-color: #ffae42;
+      top: 25vh;
+      left: 50vw;
+    }
+    div.circle-2 {
+      background-color: grey;
+      top: 60vw;
+      left: 10vw;
+    }
+  }
+
+  @media (min-height: 400px) {
+    div.circle-1 {
+      top: 25vh;
+      left: 50vw;
+    }
+    div.circle-2 {
+      top: 40vh;
+      left: 10vw;
+    }
+  }
+
+  @media (min-height: 400px) and (min-width: 500px) {
+    body {
+      background-color: #44484B;
+    }
+
+    div.circle-1 {
+      top: 30vh;
+      left: 30vw;
+      width: 25vw;
+      height: 25vw;
+      box-shadow: 0px 0px 100px #ffae42;
+    }
+    div.circle-2 {
+      background-color: black;
+      top: 30vh;
+      left: 30vw;
+      width: 25vw;
+      height: 25vw;
+
+    }
+
+  }
+  </style>
+</head>
+<body>
+  <div class="circle circle-1"></div>
+  <div class="circle circle-2"></div>
+</body>
+</html>
